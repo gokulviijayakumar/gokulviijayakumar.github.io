@@ -1,0 +1,26 @@
+<script src='https://d3js.org/d3.v7.min.js'></script> 
+ 
+<style> 
+    .test { 
+        color:'red' 
+    } 
+</style> 
+<p class="test1">First paragraph</p> 
+<p class="test">Second paragraph</p> 
+<p class="test2">Third paragraph</p> 
+ 
+<script> 
+    d3.selectAll(".test")
+    	.style('color','green')
+      .style("font-family","sans-serif")
+      .style("font-size", "15px");      
+    d3.selectAll(".test2")
+    	.style('color','green')
+      .style("font-family","sans-serif")
+      .style("font-size", "30px"); 
+    d3.selectAll(".test1")
+      .style("color","red")
+    	.style("font-size", "44px")
+   		.style("font-family","Roboto Slab")
+      .style("line-height","10px");
+</script>
